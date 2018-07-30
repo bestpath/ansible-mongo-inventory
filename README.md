@@ -1,9 +1,9 @@
 # ansible-mongo-inventory
 
-#Description
+# Description
 Ansible Dynamic Inventory using MongoDB
 
-##Environment
+## Environment
 
 Required:
 * Python 2.7
@@ -12,11 +12,11 @@ Required:
 * Pymongo
 * ArgParse
 
-## Installation
+# Installation
 
 There is no installation required for this script to work
 
-#Usage
+# Usage
 
 Ansible dynamic inventory documentation can be found at the following location:
 
@@ -34,7 +34,7 @@ The script can be run using any of the following options:
 	ansible-inventory -i inventory.py [--host=<hostname> | --list]
 
 
-##Database Layout
+## Database Layout
 
 The script assumes that the hosts are entered into the 'hosts' collection, and the groups into the 'groups' collection using the following format:
 
