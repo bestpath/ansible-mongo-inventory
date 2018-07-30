@@ -38,12 +38,11 @@ The script can be run using any of the following options:
 
 The script assumes that the hosts are entered into the 'hosts' collection, and the groups into the 'groups' collection using the following format:
 
-* Example. Hosts
+Hosts Collection Layout:
 
-	db.hosts.insert({"hostname": "<host_1>", "vars": {"<var_1_name>": "<var_1_attribute>", "var_2_name": "<var_2_attribute>"}})
-
-
-* Example. Groups
+	db.hosts.insert({"hostname": "<host_1>", "vars": {"<var_name>": "<var_attribute>", "<var_name>": "<var_attribute>"}})
+	
+Groups Collection Layout:
 
 	db.groups.insert({"name": "<group_1>", "hosts": ["<host_1>"], "vars": {}, "children": []})
 	db.groups.insert({"name": "<group_2>", "hosts": ["<host_2>", "<host_3>"], "vars": {}, "children": []})
